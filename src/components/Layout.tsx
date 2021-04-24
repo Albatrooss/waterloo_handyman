@@ -6,10 +6,9 @@ import theme from '../theme';
 
 interface Props {
     title: string;
-    children: Element;
 }
 
-const Layout = ({ title, children }: Props) => {
+const Layout: React.FC<Props> = ({ title, children }) => {
     return (
         <>
             <Head>

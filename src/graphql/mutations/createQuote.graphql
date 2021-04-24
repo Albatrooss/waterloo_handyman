@@ -1,0 +1,21 @@
+mutation createQuote(
+    $name: String!
+    $email: String!
+    $phoneNumber: String!
+    $description: String!
+) {
+    createQuote(
+        input: { name: $name, email: $email, phoneNumber: $phoneNumber, description: $description }
+    ) {
+        quote {
+            id
+            name
+            description
+            statusStr
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

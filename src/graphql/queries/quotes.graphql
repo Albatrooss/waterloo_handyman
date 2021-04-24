@@ -1,0 +1,13 @@
+query Quotes {
+    quotes {
+        id
+        name
+        email
+        phoneNumber
+        description
+        status
+        statusStr
+        createdAt
+        updatedAt
+    }
+}
