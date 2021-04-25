@@ -4,9 +4,10 @@ import { WrapperVariant } from '../interfaces';
 
 interface WrapperProps {
     variant?: WrapperVariant;
+    mt?: number;
 }
 
-export const Wrapper: React.FC<WrapperProps> = ({ children, variant }) => {
+export const Wrapper: React.FC<WrapperProps> = ({ children, mt = 0, variant }) => {
     let maxW = '1366px';
     switch (variant) {
         case 'sm':
@@ -20,7 +21,7 @@ export const Wrapper: React.FC<WrapperProps> = ({ children, variant }) => {
             break;
     }
     return (
-        <Box mt={8} maxW={maxW} w='90%' mx='auto'>
+        <Box mt={mt} maxW={maxW} w='90%' mx='auto'>
             {children}
         </Box>
     );

@@ -1,8 +1,9 @@
 import React from 'react';
-import Head from 'next/head';
-import Navbar from './Navbar';
 import { Box } from '@chakra-ui/layout';
 import theme from '../theme';
+import Head from 'next/head';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 interface Props {
     title: string;
@@ -18,6 +19,7 @@ const Layout: React.FC<Props> = ({ title, children }) => {
             <Box w='100%' maxW={theme.maxW} mx='auto'>
                 {children}
             </Box>
+            <Footer />
         </>
     );
 };

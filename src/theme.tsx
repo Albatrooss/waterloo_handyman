@@ -14,8 +14,11 @@ const theme = extendTheme({
     colors: {
         black: '#16161D',
         white: '#f2f2f2',
+        grey: '#CCCCCC',
 
         primary: 'blue.500',
+        secondary: '#BE6E46',
+        third: '#59594A',
     },
     maxW: '1366px',
     fonts,
@@ -40,6 +43,13 @@ const theme = extendTheme({
             viewBox: '0 0 3000 3163',
         },
     },
+    // styles: {
+    //     global: {
+    //         html: {
+    //             scrollBehavior: 'smooth',
+    //         },
+    //     },
+    // },
 });
 
 export default theme;
