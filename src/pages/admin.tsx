@@ -16,13 +16,13 @@ const admin = ({}) => {
     const [, updateQuoteStatus] = useUpdateQuoteStatusMutation();
 
     const handleUpdateQuoteStatus = async (id: number, currentStatus: number) => {
-        let status = (currentStatus + 1) % 4;
+        let status = (currentStatus + 1) % 5;
         const response = await updateQuoteStatus({ id, status });
         if (!response) alert("couldn't update status for some reason..");
     };
 
     return (
-        <Wrapper variant='md'>
+        <Wrapper variant='lg'>
             <NextLink href='/'>
                 <Link>HOME</Link>
             </NextLink>

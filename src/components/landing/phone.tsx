@@ -14,9 +14,9 @@ const phone = () => {
             </Heading>
             <Image src='/patrick_pic01.jpeg' alt='Patrick Nadon' maxH='40vh' mx='auto' my={4} />
             <Heading size='sm' textAlign='center'>
-                Patrick Nadon
+                Owner: Patrick Nadon
             </Heading>
-            <Text textAlign='center'>Licensed and Insured</Text>
+            <Text textAlign='center'>Licensed and Insured Handyman</Text>
             <NextLink href='/get-a-quote'>
                 <Button
                     w='100%'

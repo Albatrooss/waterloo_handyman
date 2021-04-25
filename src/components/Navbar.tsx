@@ -3,12 +3,48 @@ import React from 'react';
 import theme from '../theme';
 import NextLink from 'next/link';
 import { useScreenSize } from '../hooks/useScreenSize';
+import { withUrqlClient } from 'next-urql';
+import { createUrqlClient } from '../utils/createUrqlClient';
 
 const Navbar = () => {
     const screenSize = useScreenSize();
+    // let links = [
+    //     <NextLink href='/services' key={0}>
+    //         <Link
+    //             fontWeight='semibold'
+    //             fontSize='md'
+    //             color={theme.colors.white}
+    //             px={2}
+    //             borderRight='2px'
+    //             borderColor='white'
+    //         >
+    //             SERVICES
+    //         </Link>
+    //     </NextLink>,
+    //     <NextLink href='/contact' key={1}>
+    //         <Link fontWeight='semibold' fontSize='md' color={theme.colors.white} px={2}>
+    //             CONTACT
+    //         </Link>
+    //     </NextLink>,
+    // ];
+    // if (screenSize !== 'phone')
+    //     links.unshift(
+    //         <NextLink href='/get-a-quote' key={2}>
+    //             <Link
+    //                 fontWeight='semibold'
+    //                 fontSize='md'
+    //                 color={theme.colors.white}
+    //                 px={2}
+    //                 borderRight='2px'
+    //                 borderColor='white'
+    //             >
+    //                 GET A QUOTE
+    //             </Link>
+    //         </NextLink>
+    //     );
 
     return (
-        <Box background='blue.500' w='100%' shadow='md' position='sticky' top={0} zIndex={2}>
+        <Box background='blue.500' w='100%' shadow='md' position='sticky' top={0} zIndex={10}>
             <Flex w='100%' maxW={theme.maxW} p={2} mx='auto' align='center'>
                 <NextLink href='/'>
                     <Box cursor='pointer'>
@@ -23,21 +59,7 @@ const Navbar = () => {
                         </Heading> */}
                     </Box>
                 </NextLink>
-                <Box ml='auto'>
-                    {screenSize === 'phone' ? null : (
-                        <NextLink href='/get-a-quote'>
-                            <Link
-                                fontWeight='semibold'
-                                fontSize='md'
-                                color={theme.colors.white}
-                                px={2}
-                                borderRight='2px'
-                                borderColor='white'
-                            >
-                                GET A QUOTE
-                            </Link>
-                        </NextLink>
-                    )}
+                <Flex ml='auto'>
                     <NextLink href='/services'>
                         <Link
                             fontWeight='semibold'
@@ -50,12 +72,12 @@ const Navbar = () => {
                             SERVICES
                         </Link>
                     </NextLink>
-                    <NextLink href='/contact'>
+                    <NextLink href='/get-a-quote'>
                         <Link fontWeight='semibold' fontSize='md' color={theme.colors.white} px={2}>
-                            CONTACT
+                            GET A QUOTE
                         </Link>
                     </NextLink>
-                </Box>
+                </Flex>
             </Flex>
         </Box>
     );
