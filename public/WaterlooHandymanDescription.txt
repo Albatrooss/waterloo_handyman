@@ -8,12 +8,12 @@ Home Repair and Improvements
 
 
 
-Plumbing -  water leak repair, sinks, vanities, showers, toilets and faucets.
-Drywall -  Repairs due to water damage or physical damage
-Doors- Interior doors and closets, hardware and locks
+Plumbing -  ['Water leak repair', 'Sinks', 'Vanities', 'Showers', 'Toilets','Faucets']
+Drywall -  ['Repairs due to water damage or physical damage']
+Doors- ['Interior doors', 'Closets', 'Hardware', 'Locks']
 Base trim and window casings
-Painting – All area of the home, repair to California ceilings
-Appliance Installations Over the Range, Dishwashers, Water softeners, Washer/Dryer
+Painting – ['All area of the home', 'Repair to California ceilings']
+Appliance ['Installations Over the Range', 'Dishwashers', 'Water Softeners', 'Washer/Dryer']
 Minor flooring and repair…..sorry no tiling or backsplash.
 TV Mounts, mirror and wall hanging
 Curtains and/or Blinds
