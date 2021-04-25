@@ -5,6 +5,7 @@ import ServiceCard from '../components/ServiceCard';
 import { Wrapper } from '../components/Wrapper';
 import { useScreenSize } from '../hooks/useScreenSize';
 import theme from '../theme';
+import { CheckIcon } from '@chakra-ui/icons';
 
 interface Props {}
 
@@ -42,7 +43,8 @@ const services = ({}: Props) => {
                                     textAlign='center'
                                     // fontSize='larger'
                                 >
-                                    {service}
+                                    {service + ' '}
+                                    <CheckIcon />
                                 </Text>
                             </Box>
                         ))}
@@ -63,7 +65,8 @@ const services = ({}: Props) => {
                                     textAlign='center'
                                     // fontSize='larger'
                                 >
-                                    {service}
+                                    {service + ' '}
+                                    <CheckIcon />
                                 </Text>
                             </Box>
                         ))}
@@ -83,7 +86,8 @@ const services = ({}: Props) => {
                                     textAlign='center'
                                     // fontSize='larger'
                                 >
-                                    {service}
+                                    {service + ' '}
+                                    <CheckIcon />
                                 </Text>
                             </Box>
                         ))}
@@ -104,7 +108,8 @@ const services = ({}: Props) => {
                                     textAlign='center'
                                     // fontSize='larger'
                                 >
-                                    {service}
+                                    {service + ' '}
+                                    <CheckIcon />
                                 </Text>
                             </Box>
                         ))}
@@ -129,7 +134,8 @@ const services = ({}: Props) => {
                                     textAlign='center'
                                     // fontSize='larger'
                                 >
-                                    {service}
+                                    {service + ' '}
+                                    <CheckIcon />
                                 </Text>
                             </Box>
                         ))}
@@ -140,16 +146,16 @@ const services = ({}: Props) => {
                     Other Services Available:
                 </Heading>
                 <Text textAlign='center' mt={2}>
-                    Minor flooring and repair…..sorry no tiling or backsplash.
+                    <CheckIcon /> Minor flooring and repair…..sorry no tiling or backsplash.
                 </Text>
                 <Text textAlign='center' mt={2}>
-                    TV Mounts, mirror and wall hanging
+                    <CheckIcon /> TV Mounts, mirror and wall hanging
                 </Text>
                 <Text textAlign='center' mt={2}>
-                    Curtains and/or Blinds
+                    <CheckIcon /> Curtains and/or Blinds
                 </Text>
                 <Text textAlign='center' mt={2}>
-                    Parging and Brick repair
+                    <CheckIcon /> Parging and Brick repair
                 </Text>
             </Wrapper>
         </Layout>
