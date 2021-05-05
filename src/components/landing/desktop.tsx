@@ -68,7 +68,7 @@ const desktop = ({}: Props) => {
                             GET A QUOTE
                         </Button>
                     </NextLink>
-                    <Text textAlign='center'>(123) 456-7890</Text>
+                    <Text textAlign='center'>(519) 635-7085</Text>
                 </Flex>
             </Flex>
             {/* </Box> */}

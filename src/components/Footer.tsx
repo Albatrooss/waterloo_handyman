@@ -11,9 +11,9 @@ const Footer = ({}: Props) => {
                 Have a question?
             </Heading>
             <Flex justifyContent='center'>
-                <Link>(123) 456-7890</Link>
+                <Link>(519) 635-7085</Link>
                 <Link ml={4} href='mailto:emailhere' target='_blank'>
-                    email@email.ca
+                    ptnadon@gmail.com
                 </Link>
             </Flex>
         </Box>
