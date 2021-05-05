@@ -116,14 +116,9 @@ const services = ({}: Props) => {
                     </Flex>
                 )}
                 <ServiceCard
-                    text='APPLIANCE REPAIR'
+                    text='APPLIANCE INSTALLATION'
                     imageSrc='/appliance.png'
-                    services={[
-                        'Installations Over the Range',
-                        'Dishwashers',
-                        'Water Softeners',
-                        'Washer/Dryer',
-                    ]}
+                    services={['Over the Range', 'Dishwashers', 'Water Softeners', 'Washer/Dryer']}
                 />
                 {screenSize !== 'phone' ? null : (
                     <Flex flexWrap='wrap' w='100%' justifyContent='center' alignItems='center'>

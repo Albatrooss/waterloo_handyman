@@ -37,7 +37,13 @@ const desktop = ({}: Props) => {
                 h='100%'
             >
                 <Box flex={1} h='60vh'>
-                    <Image src='/patrick_pic01.jpeg' alt='Patrick Nadon' h='100%' ml='auto' />
+                    <Image
+                        src='/patrick_photo01.jpeg'
+                        alt='Patrick Nadon'
+                        h='100%'
+                        ml='auto'
+                        borderRadius='0.25rem'
+                    />
                 </Box>
                 <Flex
                     flex={1}
@@ -48,15 +54,15 @@ const desktop = ({}: Props) => {
                     // ml={4}
                 >
                     <Heading textAlign='center' my={4}>
-                        Waterloo Handyman Services
+                        QUICK FIXES AT A REASONABLE PRICE
                     </Heading>
                     <Heading size='lg' textAlign='center' my={4}>
-                        Serving KW and surrounding areas
+                        License and Insured Handyman serving KW and surrounding areas
                     </Heading>
                     <Heading size='sm' textAlign='center'>
                         Owner: Patrick Nadon
                     </Heading>
-                    <Text textAlign='center'>Licensed and Insured Handyman</Text>
+                    {/* <Text textAlign='center'>Licensed and Insured Handyman</Text> */}
                     <NextLink href='/get-a-quote'>
                         <Button
                             size='lg'

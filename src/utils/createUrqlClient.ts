@@ -15,7 +15,7 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
         cookie = ctx?.req?.headers?.cookie;
     }
     return {
-        url: 'http://localhost:4000/graphql',
+        url: 'https://ohohoh.ca/graphql',
         fetchOptions: {
             credentials: 'include' as const,
             headers: cookie ? { cookie } : undefined,

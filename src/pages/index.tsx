@@ -11,6 +11,7 @@ import { useScreenSize } from '../hooks/useScreenSize';
 import DesktopLanding from '../components/landing/desktop';
 import theme from '../theme';
 import { Wrapper } from '../components/Wrapper';
+import Review from '../components/Review';
 
 const Index = () => {
     const screenSize = useScreenSize();
@@ -27,10 +28,23 @@ const Index = () => {
         <>
             <Layout title='Home'>
                 {landing}
+                <Box my={10}>
+                    <Review
+                        stars={5}
+                        title='Very Professional and excellent work'
+                        text='Patrick didn’t only repair bathroom as requested, but also suggested right type of Caulking (White vs Transparent) for different places. Thanks'
+                    />
+                    <Review
+                        stars={5}
+                        title='Perfect job'
+                        text='Everything came out great, and was super tidy and neat. It was a pleasure to have Pat here.'
+                        right
+                    />
+                </Box>
                 <Heading ml={10} size='xl'>
                     SERVICES
                 </Heading>
-                <Box h={1} w='100%' backgroundColor={theme.colors.grey}></Box>
+                <Box h={0.5} w='100%' backgroundColor={theme.colors.grey}></Box>
                 <Wrapper>
                     <ServiceCard
                         text='PLUMBING'
