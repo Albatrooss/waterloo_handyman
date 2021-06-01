@@ -34,7 +34,7 @@ const QuoteForm = ({ submitForm }: Props) => {
                     if (!response.data) {
                         setErrors({
                             description:
-                                'Something went wrong. Please try again, or give us a call at number',
+                                'Something went wrong. Please try again, or give us a call at (519) 635-7085',
                         });
                         return;
                     }

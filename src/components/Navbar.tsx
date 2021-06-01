@@ -3,6 +3,7 @@ import React from 'react';
 import theme from '../theme';
 import NextLink from 'next/link';
 import { useScreenSize } from '../hooks/useScreenSize';
+import { styled } from '@chakra-ui/system';
 
 const Navbar = () => {
     const screenSize = useScreenSize();
@@ -12,13 +13,9 @@ const Navbar = () => {
             <Flex w='100%' maxW={theme.maxW} p={2} mx='auto' align='center'>
                 <NextLink href='/'>
                     <Box cursor='pointer'>
-                        <Heading
-                            size={isMonitor ? 'xl' : '2xl'}
-                            color={theme.colors.white}
-                            textAlign='center'
-                        >
+                        <h1 style={{fontSize: '2.2rem', fontWeight: 'bolder', color: 'white'}}>
                             {screenSize === 'desktop' ? 'WATERLOO HANDYMAN' : 'W'}
-                        </Heading>
+                        </h1>
                         {/* <Heading size='sm' color={theme.colors.white} textAlign='center'>
                             HANDYMAN
                         </Heading>

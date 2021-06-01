@@ -10,9 +10,9 @@ const phone = () => {
                 QUICK FIXES AT A REASONABLE PRICE
             </Heading>
             <Heading size='md' textAlign='center' my={4}>
-                License and Insured Handyman serving KW and surrounding areas
+                Licensed and Insured Handyman serving KW and surrounding areas
             </Heading>
-            <Image src='/patrick_pic01.jpeg' alt='Patrick Nadon' maxH='40vh' mx='auto' my={4} />
+            <Image src='/patrick_photo01.jpeg' alt='Patrick Nadon' maxH='40vh' mx='auto' my={4} />
             <Heading size='sm' textAlign='center'>
                 Owner: Patrick Nadon
             </Heading>

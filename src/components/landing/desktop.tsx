@@ -18,7 +18,7 @@ const desktop = ({}: Props) => {
         >
             <Image
                 src='/painter.png'
-                alt='Patrick Nadon'
+                alt='Painter'
                 h='100%'
                 position='absolute'
                 top={0}
@@ -57,7 +57,7 @@ const desktop = ({}: Props) => {
                         QUICK FIXES AT A REASONABLE PRICE
                     </Heading>
                     <Heading size='lg' textAlign='center' my={4}>
-                        License and Insured Handyman serving KW and surrounding areas
+                        Licensed and Insured Handyman serving KW and surrounding areas
                     </Heading>
                     <Heading size='sm' textAlign='center'>
                         Owner: Patrick Nadon
